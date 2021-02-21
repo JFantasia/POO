@@ -12,8 +12,10 @@ class Estudiante(Persona):
         super().__init__(v_dni, v_nombre, v_direccion, v_ciudad, v_provincia, v_pais, v_email, v_telefono)
         self.legajo = v_legajo
         self.carreras = {}
+        # matriculaciones es un diccionario que va a tener como clave la materias
+        # y una lista con información de fecha de matriculación y tres notas
+        # para primer modulo del año, segundo módulo del año y final.
         self.matriculaciones = {}
-        print(type(self.carreras))
 
     def inscribir_carrera(self, v_codigo):
         # Desde python 3 no se usa el has_key sino el "in" o "not in"
