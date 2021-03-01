@@ -3,6 +3,15 @@ import sys
 import psycopg2
 from psycopg2 import Error
 
+# TABLA DE LA BASE DE DATOS
+#
+# CREATE TABLE public.profesor (
+# 	dni varchar(8) NOT NULL,
+# 	nombre varchar(40) NOT NULL,
+# 	mail varchar(50) NULL,
+# 	CONSTRAINT profesor_pk PRIMARY KEY (dni)
+# );
+
 
 class DB():
 
