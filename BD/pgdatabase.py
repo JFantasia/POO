@@ -1,5 +1,7 @@
 import sys
 
+# https://www.psycopg.org/install/
+
 import psycopg2
 from psycopg2 import Error
 
